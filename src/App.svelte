@@ -1,11 +1,12 @@
 <script>
   import dataCopy from "./data/dataCopy";
-  import LineChart from "./LineChart.svelte";
+  import LineChart from "./components/LineChart.svelte";
   import data from "./data/data.js";
-  
+  import graphConfiguration from "./config/graph";
+ 
 
 </script>
 
-<LineChart {data}/>
-<LineChart data={dataCopy}/>
+<LineChart {data} {graphConfiguration}/>
+<LineChart data={dataCopy} {graphConfiguration}/>
 

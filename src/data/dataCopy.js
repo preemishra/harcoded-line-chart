@@ -1,6 +1,6 @@
 export default [
   { name: "Antonio", hours: 1, grade: 10 },
-  { name: "Sai", hours: 50, grade: 90 },
+  { name: "Sai", hours: 80, grade: 90 },
   { name: "Yohan", hours: 23, grade: 80 },
   { name: "Krishna", hours: 15, grade: 74 },
   { name: "Jennifer", hours: 10, grade: 72 },

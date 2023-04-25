@@ -3,12 +3,12 @@
   export let xScale;
   export let margin;
 
-  let xTicks = xScale.ticks(10);
+ export let xTicks
 </script>
 <g>
   {#each xTicks as tick}
     <text
-      x={xScale(tick)}
+      x={xScale(tick)+margin.left}
       y={height - margin.bottom}
       dy="6"
       dominant-baseline="hanging">{tick}% </text

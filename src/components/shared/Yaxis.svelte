@@ -4,13 +4,13 @@
   export let margin;
   export let yPath;
 
-  let yTicks = yScale.ticks(5);
+  export let yTicks
 </script>
 
 <g transform="translate({margin.left} {margin.top})">
   <path stroke="currentColor" d={yPath} fill="none" />
   {#each yTicks as tick}
-    <text x={0} y={yScale(tick)} dy="-6">{tick}</text>
+    <text x=-20 y={yScale(tick)} dy="6">{tick}</text>
     <line
       x1="0"
       y1={yScale(tick)}
